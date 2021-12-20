@@ -1,0 +1,38 @@
+.portfolio.section {
+    display: none;
+    padding-top: 0;
+    @media screen and (min-width: 1200px){
+        display: block;
+    }
+}
+
+.projects {
+    list-style: none;
+    display: flex;
+}
+
+.projects {
+    &__image {
+    margin-right: 30px;
+    position: relative;
+}
+    &__text {
+    @include font(var(--main-text-size), 1.143, var(--main-letter-spacing), bold);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-transform: uppercase;
+    color: var(--header-text-color);
+    padding-top: 27px;
+    padding-bottom: 27px;
+    width: 100%;
+    background-color: rgba(47, 48, 58, 0.8);
+    text-align: center;
+}
+}
+
+.projects__image{
+    &:last-child {
+        margin-right: 0;
+    }
+}

@@ -1,0 +1,131 @@
+.header-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header {
+    justify-content: space-between;
+}
+
+.header__button {
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+
+.header .logo {
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.header .navigation-item {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+header {
+    border-bottom: 1px solid #ECECEC;
+}
+
+.header-block {
+    display: none;
+    // display: flex;
+    
+}
+
+.header-contacts {
+    // display: flex;
+    // align-items: center;
+    color: var(--secondary-text-color);
+    transition: color var(--transform-time) var(--transform-function);
+}
+
+.header-envelope {
+    height: 12px;
+    width: 16px;
+    margin-right: 10px;
+    fill: currentColor;
+}
+
+.header-smartphone {
+    height: 16px;
+    width: 10px;
+    margin-right: 10px;
+    fill: currentColor;
+    position: relative;
+    top: 3px;
+}
+
+.header-contacts:hover, .header-contacts:hover a, .header-contacts:focus, .header-contacts a:focus {
+    color: var(--accent-text-color);
+}
+
+.logo {
+    font-size: 26px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: var(--secondary-title-weight);
+    line-height: 1.17;
+    color: var(--main-text-color);
+    text-decoration: none;
+    // margin-right: 93px;
+}
+
+.logo span {
+    color: var(--accent-text-color);
+}
+
+.navigation {
+    list-style: none;
+    display: none;
+    @media screen and (min-width: 769px) {
+        display: flex;
+    }
+    
+}
+
+.navigation-item {
+    line-height: 1.17;
+    font-weight: 500;
+    color: var(--main-text-color);
+    text-decoration: none;
+    transition: color var(--transform-time) var(--transform-function);
+    position: relative;
+}
+
+.navigation-item.current::after {
+    content: "";
+    height: 4px;
+    background-color: var(--accent-text-color);
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.navigation li {
+    margin-right: 50px;
+}
+
+.navigation li:last-child {
+    margin-right: 0;
+}
+
+.navigation-item:hover, .navigation-item:focus {
+    color: var(--accent-text-color);
+}
+
+.navigation-contact {
+    color: var(--secondary-text-color);
+    text-decoration: none;
+    font-weight: 500;
+    line-height: 1.143;
+    letter-spacing: var(--secondary-letter-spacing);
+    transition: color var(--transform-time) var(--transform-function);
+}
+
+.navigation-contact:first-child {
+    margin-right: 50px;
+}
+
+
