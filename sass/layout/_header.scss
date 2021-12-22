@@ -20,8 +20,8 @@
 }
 
 .header .navigation-item {
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 header {
@@ -62,13 +62,16 @@ header {
 }
 
 .logo {
-    font-size: 26px;
+    font-size: 24px;
     font-family: 'Raleway', sans-serif;
     font-weight: var(--secondary-title-weight);
     line-height: 1.17;
     color: var(--main-text-color);
     text-decoration: none;
     // margin-right: 93px;
+    @media screen and (min-width: 1200px){
+        font-size: 26px;
+    }
 }
 
 .logo span {

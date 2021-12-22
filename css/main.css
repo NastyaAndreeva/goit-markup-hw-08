@@ -315,9 +315,30 @@ ul {
 .portfolio-buttons {
   list-style: none;
   display: flex;
-  width: 611px;
-  margin: 0 auto;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+  width: 362px;
+}
+
+@media screen and (max-width: 767px) {
+  .portfolio-buttons li {
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio-buttons {
+    width: 611px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .section.portfolio-detailed {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 .portfolio-buttons .item {
@@ -438,6 +459,22 @@ ul {
   margin-top: 20px;
 }
 
+@media screen and (max-width: 1199px) {
+  .footer__address {
+    margin-bottom: 60px;
+  }
+}
+
+.footer__address li:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__address li:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
+
 .footer__item {
   line-height: 1.714;
   font-style: normal;
@@ -489,16 +526,18 @@ ul {
   fill: #ffffff;
 }
 
-.footer__address li {
-  margin-bottom: 9px;
-}
-
 .footer__item:last-child {
   margin-bottom: 0;
 }
 
 .footer__item:hover, .footer__item:focus {
   opacity: 1;
+}
+
+@media screen and (max-width: 1199px) {
+  .footer-block__right {
+    margin-bottom: 60px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -513,6 +552,10 @@ ul {
 
 .footer__link:hover, .footer__link:focus {
   background-color: var(--accent-text-color);
+}
+
+.footer-block__right.email-input {
+  margin-bottom: 0;
 }
 
 @media screen and (min-width: 1200px) {
@@ -875,8 +918,8 @@ ul {
 }
 
 .header .navigation-item {
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 header {
@@ -913,12 +956,18 @@ header {
 }
 
 .logo {
-  font-size: 26px;
+  font-size: 24px;
   font-family: 'Raleway', sans-serif;
   font-weight: var(--secondary-title-weight);
   line-height: 1.17;
   color: var(--main-text-color);
   text-decoration: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+  }
 }
 
 .logo span {

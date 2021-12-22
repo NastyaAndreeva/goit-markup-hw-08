@@ -1,21 +1,40 @@
 .portfolio-buttons {
     list-style: none;
     display: flex;
-    width: 611px;
-    margin: 0 auto;
-    margin-bottom: 50px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    width: 362px;
+    li {
+        @media screen and (max-width: 767px){
+            margin-bottom: 15px;
+        }
+    }
+    @media screen and (min-width: 1200px){
+        width: 611px;
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
 }
 
-.portfolio-buttons .item {
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.857;
-    background-color: var(--button-main-color);
-    padding: 6px 22px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: color var(--transform-time) var(--transform-function), background-color var(--transform-time) var(--transform-function);
+.section.portfolio-detailed {
+    @media screen and (max-width:1199px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+
+.portfolio-buttons {
+    .item {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.857;
+        background-color: var(--button-main-color);
+        padding: 6px 22px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: color var(--transform-time) var(--transform-function), background-color var(--transform-time) var(--transform-function);
+    }
 }
 
 .portfolio-buttons li:not(:last-child) {

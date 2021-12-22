@@ -22,6 +22,15 @@
     &__address {
         list-style: none;
         margin-top: 20px;
+        @media screen and (max-width: 1199px){
+            margin-bottom: 60px;
+        }
+        li:not(:last-child) {
+        margin-bottom: 8px;
+        @media screen and (min-width: 1200px) {
+            margin-bottom: 9px;
+        }
+        }
     }
     &__item {
         line-height: 1.714;
@@ -60,11 +69,6 @@
     &__icon {
         fill: #ffffff;
     }
-    &__address {
-        li {
-        margin-bottom: 9px;
-        }
-    }
 }
 
 .footer__item
@@ -81,6 +85,9 @@
 }
 
 .footer-block__right {
+    @media screen and (max-width: 1199px){
+        margin-bottom: 60px;
+    }
     @media screen and (min-width: 1200px){
         margin-left: 70px;
     }
@@ -101,6 +108,7 @@
 }
 
 .footer-block__right.email-input {
+    margin-bottom: 0;
     @media screen and (min-width: 1200px){
         margin-left: 93px;
     }
