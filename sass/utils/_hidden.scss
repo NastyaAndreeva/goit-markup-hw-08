@@ -4,6 +4,12 @@
     pointer-events: none;
 }
 
+.is-hidden--mobile {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
+
 .visually-hidden {
     position: absolute;
     white-space: nowrap;

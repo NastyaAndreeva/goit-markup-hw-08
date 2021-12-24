@@ -1,7 +1,13 @@
 .characteristics__list {
     list-style: none;
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 768px) {
         display: flex;
+        flex-wrap: wrap;
+        @media screen and (max-width: 1199px){
+            li {
+                width: 354px;
+            }
+        }
     }
     
 }
@@ -11,12 +17,22 @@
         @include font(var(--main-text-size), 1.172, var(--main-letter-spacing), var(--secondary-title-weight));
         text-transform: uppercase;
         margin-bottom: 10px;
+        @media screen and (max-width: 1199px){
+            text-align: center;
+        }
 }
     &__text {
         @include font(var(--main-text-size), 1.714, var(--main-letter-spacing), 400);
         color: var(--secondary-text-color);
     }
     &__detail {
+        @media screen and (min-width: 768px) {
+            width: 354px;
+            &:nth-child(2n + 1) {
+                margin-right: 30px;
+            }
+            
+        }
         @media screen and (min-width: 1200px) {
             width: 270px;
             margin-right: 30px;
@@ -24,9 +40,15 @@
         
     }
     &__icon {
-        width: 270px;
-        height: 120px;
+        background-color: #F5F4FA;
+        // width: 270px;
+        width: 100%;
+        padding-top: 25px;
+        padding-bottom: 25px;
         margin-bottom: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
 

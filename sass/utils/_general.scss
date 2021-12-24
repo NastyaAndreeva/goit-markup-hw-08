@@ -14,11 +14,16 @@ html {
 }
 
 .section-title {
-    font-size: 36px;
+    font-size: 28px;
+    line-height: 1.142;
+    margin-bottom: 30px;
+    @media screen and (min-width: 1200px){
+        font-size: 36px;
+        line-height: 1.172;
+        margin-bottom: 50px;
+    }
     font-weight: var(--secondary-title-weight);
-    line-height: 1.172;
-    text-align: center;
-    margin-bottom: 50px;
+    text-align: center;  
 }
 
 button {

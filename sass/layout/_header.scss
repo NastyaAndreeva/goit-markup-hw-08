@@ -6,22 +6,32 @@
 
 .header {
     justify-content: space-between;
+    @media screen and (min-width: 768px){
+        display: flex;
+        align-items: center;
+    }
 }
 
 .header__button {
-    @media screen and (min-width: 768px) {
-        display: none;
+    display: none;
+    @media screen and (max-width: 767px) {
+        display: block;
     }
 }
 
 .header .logo {
     padding-top: 16px;
     padding-bottom: 16px;
+    @media screen and (min-width: 768px){
+        margin-right: 88px;
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
 }
 
 .header .navigation-item {
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 header {
@@ -29,16 +39,29 @@ header {
 }
 
 .header-block {
-    display: none;
-    // display: flex;
+    @media screen and (max-width: 767px){
+        display: none;
+    }
+    
+    @media screen and (min-width: 1200px){
+        display: flex;
+        align-items: center;
+    }
     
 }
 
 .header-contacts {
-    // display: flex;
-    // align-items: center;
     color: var(--secondary-text-color);
     transition: color var(--transform-time) var(--transform-function);
+    @media screen and (max-width: 1199px){
+        &:first-child {
+            margin-bottom: 10px;
+        }
+    }
+    @media screen and (min-width: 1200px){
+        display: flex;
+        align-items: center;
+    }
 }
 
 .header-envelope {
@@ -53,8 +76,10 @@ header {
     width: 10px;
     margin-right: 10px;
     fill: currentColor;
-    position: relative;
-    top: 3px;
+    @media screen and (min-width: 768px){
+        position: relative;
+        top: 3px;
+    }
 }
 
 .header-contacts:hover, .header-contacts:hover a, .header-contacts:focus, .header-contacts a:focus {
@@ -80,9 +105,18 @@ header {
 
 .navigation {
     list-style: none;
-    display: none;
-    @media screen and (min-width: 769px) {
+    @media screen and (max-width: 767px){
+        display: none;
+    }
+    
+    @media screen and (min-width: 768px) {
         display: flex;
+    }
+    &__icon:focus, &__icon:hover {
+        fill: var(--accent-text-color);
+    }
+    &__modal {
+        background-color: transparent;
     }
     
 }
@@ -128,7 +162,10 @@ header {
 }
 
 .navigation-contact:first-child {
-    margin-right: 50px;
+    @media screen and (min-width: 1200px){
+        margin-right: 50px;
+    }
+    
 }
 
 

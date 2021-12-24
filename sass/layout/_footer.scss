@@ -2,13 +2,22 @@
     background-color: var(--header-bcg-color);
     padding-top: 60px;
     padding-bottom: 60px;
+    &-tab {
+        display: block;
+        @media screen and (min-width: 768px){
+            display: flex;
+            justify-content: space-around;
+        }
+        @media screen and (min-width: 768px) and (max-width: 1199px){
+            text-align: center;
+        }
+    }
     a {
         color: var(--header-text-color);
     }
     &-block {
         @media screen and (min-width: 1200px){
             display: flex;
-            align-items: baseline;
         }
         
     }
@@ -43,7 +52,7 @@
         opacity: 1;
     }
     &__title {
-        @media screen and (max-width: 767px) {
+        @media screen and (max-width: 1199px) {
             text-align: center;
         }
         @include font(14px, 1.18, var(--main-letter-spacing), var(--secondary-title-weight));
@@ -124,6 +133,10 @@
 
 .footer-input {
         width: 450px;
+        @media screen and (min-width: 768px) and (max-width: 1199px){
+            margin: 0 auto;
+            display: block;
+        }
         background-color: transparent;
         padding: 15px 16px;
         border: 1px solid rgba(255, 255, 255, 0.3);
