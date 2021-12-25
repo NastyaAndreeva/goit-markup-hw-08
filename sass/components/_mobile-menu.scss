@@ -10,7 +10,7 @@ ul {
 }
 
 .modal-mobile {
-    height: 100%;
+    min-height: 796px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -65,6 +65,4 @@ ul {
     width: 30px;
     height: 30px;
     background-color: transparent;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 50%;
 }

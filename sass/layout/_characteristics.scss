@@ -1,5 +1,8 @@
 .characteristics__list {
     list-style: none;
+    @media screen and (max-width: 1199px){
+        margin-bottom: -30px;
+    }
     @media screen and (min-width: 768px) {
         display: flex;
         flex-wrap: wrap;
@@ -17,7 +20,7 @@
         @include font(var(--main-text-size), 1.172, var(--main-letter-spacing), var(--secondary-title-weight));
         text-transform: uppercase;
         margin-bottom: 10px;
-        @media screen and (max-width: 1199px){
+        @media screen and (max-width: 767px){
             text-align: center;
         }
 }
@@ -26,6 +29,9 @@
         color: var(--secondary-text-color);
     }
     &__detail {
+        @media screen and (max-width: 1199px){
+            margin-bottom: 30px;
+        }
         @media screen and (min-width: 768px) {
             width: 354px;
             &:nth-child(2n + 1) {

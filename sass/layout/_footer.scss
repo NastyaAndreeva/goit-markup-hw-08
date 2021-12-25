@@ -44,9 +44,11 @@
     &__item {
         line-height: 1.714;
         font-style: normal;
-        opacity: 0.6;
         text-decoration: none;
         transition: opacity var(--transform-time) var(--transform-function);
+    }
+    &__item--opacity {
+        opacity: 0.6;
     }
     &__item--office {
         opacity: 1;

@@ -18,6 +18,9 @@
         height: 100vh;
     }
     width: 528px;
+    @media screen and (max-width: 767px){
+        width: 100%;
+    }
     min-height: 581px;
     padding: 40px;
     border-radius: 4px;
